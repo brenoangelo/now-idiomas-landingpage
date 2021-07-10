@@ -35,6 +35,34 @@ html, body {
   font-size: 18px;
 }
 
+.logo-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.logo-row .logo {
+  background-image: url("/img/logo.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 50px;
+  height: 50px;
+  margin-right: 15px;
+}
+
+.logo-row h1 {
+  color: #373737;
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.logo-row h1 strong {
+  color: #717CFF;
+}
+
 header {
   padding: 10px 0;
 }
@@ -46,34 +74,6 @@ header .container {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-header .container .logo-row {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-header .container .logo-row .logo {
-  background-image: url("/img/logo.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  width: 50px;
-  height: 50px;
-  margin-right: 15px;
-}
-
-header .container .logo-row h1 {
-  color: #373737;
-  font-size: 30px;
-  font-weight: 500;
-}
-
-header .container .logo-row h1 strong {
-  color: #717CFF;
 }
 
 header .container nav.menu-desktop ul {
@@ -339,6 +339,7 @@ section.testimonials .container .container-slider .container-slider-single .perf
 
 .container-slider-single p {
   margin: 15px 0;
+  line-height: 25px;
   color: rgba(0, 0, 0, 0.5);
   font-size: 14px;
 }
@@ -389,4 +390,123 @@ li.slick-active button {
 }
 
 /*FIM SLICK SLIDER*/
+section.faq {
+  padding: 55px 0;
+}
+
+section.faq .container {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section.faq .container h2 {
+  margin-bottom: 45px;
+  font-size: 37px;
+  font-weight: 300;
+}
+
+section.faq .container .accordeon .accordeon-single {
+  width: 100%;
+  max-width: 700px;
+}
+
+section.faq .container .accordeon .accordeon-single .accordeon-title {
+  min-width: 700px;
+  -webkit-box-shadow: -1px 2px 15px 5px rgba(0, 0, 0, 0.15);
+  box-shadow: -1px 2px 15px 5px rgba(0, 0, 0, 0.15);
+  background-color: #fafafa;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20px;
+  border-radius: 15px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom: 22px;
+}
+
+section.faq .container .accordeon .accordeon-single .accordeon-title h3 {
+  font-weight: 500;
+  font-size: 20px;
+}
+
+section.faq .container .accordeon .accordeon-single .accordeon-title i {
+  font-size: 27px;
+}
+
+section.faq .container .accordeon .accordeon-single p {
+  display: none;
+  font-size: 17px;
+  padding: 40px 20px;
+}
+
+section.cta {
+  padding: 70px 0;
+  background-color: #FAFAFA;
+}
+
+section.cta .container {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+section.cta .container h2 {
+  font-size: 37px;
+  font-weight: 500;
+}
+
+footer {
+  padding: 55px 0;
+  background-color: #717CFF;
+}
+
+footer .container {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer .container .logo-row h1 strong {
+  color: white;
+}
+
+footer .container .social-media a {
+  color: white;
+  font-size: 22px;
+  margin: 15px;
+}
+
+.footer2 {
+  padding: 20px 0;
+  background-color: #5b67ec;
+}
+
+.footer2 .container {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer2 .container p {
+  color: white;
+}
 /*# sourceMappingURL=style.css.map */
