@@ -42,3 +42,27 @@ $('.container-slider').slick({
         })
     })
 /* */
+
+
+/*MENU MOBILE */
+
+$('.menu-mobile i').click(()=>{
+    $('.menu-mobile ul').slideToggle()
+})
+/* */
+
+/* SCROLL SUAVE*/
+
+$('a[href^="#"]').on('click', function(e) {
+    e.preventDefault();
+    
+    var id = $(this).attr('href'),
+            targetOffset = $(id).offset().top;
+            
+    $('html, body').animate({ 
+        scrollTop: targetOffset - 100
+    }, 500);
+
+    $('.menu-mobile ul').slideUp()
+});
+/* */
