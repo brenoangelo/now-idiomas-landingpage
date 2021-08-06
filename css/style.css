@@ -267,12 +267,25 @@ section.features {
   padding: 25px;
 }
 
+section.features .container {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: top;
+      -ms-flex-align: top;
+          align-items: top;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 section.features .container .feature-single {
   background-color: white;
   border: 3px solid #717CFF;
   margin: 15px;
   padding: 15px;
   border-radius: 15px;
+  min-width: 270px;
+  max-width: 270px;
 }
 
 section.features .container .feature-single h3 {
@@ -315,9 +328,9 @@ section.courses .container .courses-container {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: top;
+      -ms-flex-align: top;
+          align-items: top;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;

@@ -217,13 +217,20 @@ section.features{
     top: -110px;
     background-color: #FAFAFA;
     padding: 25px;
+    
     .container{
+        flex-wrap: wrap;
+        align-items: top;
+        justify-content: center;
         .feature-single{
             background-color: white;
             border: 3px solid $secundary-color;;
             margin: 15px;
             padding: 15px;
             border-radius: 15px;
+            min-width: 270px;
+            max-width: 270px;
+            
             h3{
                 font-size: 25px;
                 margin:15px 0;
@@ -256,7 +263,7 @@ section.courses{
         .courses-container{
             display:flex;
             flex-wrap: wrap;
-            align-items: center;
+            align-items: top;
             justify-content: center;
 
             
